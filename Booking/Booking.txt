@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[tbluser]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [UserName] VARCHAR(50) NULL, 
+    [Password] VARCHAR(50) NULL, 
+    [ConfirmPassword] VARCHAR(50) NULL
+)
+
+INSERT INTO tbluser VALUES ('admin','999', 'admin')
+
+SELECT * FROM tbluser 
